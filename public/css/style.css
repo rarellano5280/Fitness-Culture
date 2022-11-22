@@ -1,0 +1,19 @@
+
+.bg-log-in {
+    background-color: #f7f8f9;
+    width: 100%;
+    height: 100vh;
+}
+
+.login-text {
+    text-align: center;
+}
+
+.login-form {
+    border: 0px solid;
+    padding: 50px 60px;
+    margin-top: 20vh;
+    -webkit-box-shadow: -1px 4px 20px 11px rgba(49,49,49,0.57);
+-moz-box-shadow: -1px 4px 20px 11px rgba(49,49,49,0.57);
+box-shadow: -1px 4px 20px 11px rgba(49,49,49,0.57);
+}
