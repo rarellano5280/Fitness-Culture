@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Culture</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="./css/dashboard.css">
+</head>
+
+<body>
+    <!-- jumbotron -->
+    <div class="jumbotron text-center p-5">
+        <h1 class="display-4 pt-5">Fitness Culture</h1>
+        <p class="lead fs-2 pb-5">Dashboard</p>
+        <hr class="my-4">
+    </div>
+    <!-- Buttom Columns -->
+    <div class="container text-center pt-5">
+        <div class="row align-items-start pt-5">
+            <div class="col">
+                <button class="btn" id="nutritionBtn" data-bs-toggle="modal" data-bs-target="#reg-modal">
+                    <i class="fa-brands fa-nutritionix fs-1"></i>
+                    <p>Nutrition</p>
+                </button>
+            </div>
+            <div class="col">
+                <button class="btn" id="programBtn">
+                    <i class="fa-solid fa-note-sticky fs-1"></i>
+                    <p>Program</p>
+                </button>
+            </div>
+            <div class="col">
+                <button class="btn">
+                    <i class="fa-solid fa-ruler-vertical fs-1"></i>
+                    <p>Measurements</p>
+                </button>
+            </div>
+        </div>
+        <div class="row align-items-center pt-5">
+            <div class="col">
+                <button class="btn">
+                    <i class="fa-solid fa-bowl-food fs-1"></i>
+                    <p>Meal Prep</p>
+                </button>
+            </div>
+            <div class="col">
+                <button class="btn">
+                    <i class="fa-solid fa-weight-hanging fs-1"></i>
+                    <p>Max</p>
+                </button>
+            </div>
+            <div class="col">
+                <button class="btn">
+                    <i class="fa-solid fa-user fs-1"></i>
+                    <p>Account</p>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
+    <div class="modal fade" id="reg-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://kit.fontawesome.com/93c3eda7e5.js" crossorigin="anonymous"></script>
+    <script src="./js/dashboard.js"></script>
+</body>
+
+</html>
