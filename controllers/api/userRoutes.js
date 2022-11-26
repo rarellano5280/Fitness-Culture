@@ -1,6 +1,14 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
+
+//Get all users
+router.get('/', (req, res) => {
+  User.findAll().then((userData) => {
+    res.json(userData);
+  });
+});
+
 router.post('/', async (req, res) => {
   try {
     const userData = await User.create(req.body);
@@ -59,13 +67,16 @@ router.post('/logout', (req, res) => {
   }
 });
 
+//Post new user from /signup 
 router.post('/signup', async (req, res) => {
   try {
-    const newUser = await User.create(req.body);
-    res.status(200).json(newUser);
+    const userData = await User.create(req.body);
+    // 200 status code for successful request
+    res.status(200).json(userData);
   } catch (err) {
+    // 400 status code for bad request
     res.status(400).json(err);
   }
-  });
+});
 
 module.exports = router;
