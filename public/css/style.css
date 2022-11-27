@@ -1,3 +1,48 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background:  #f7f8f9;
+    font-family: system-ui;
+}
+
+.hero{
+    position: relative;
+    height: 230px;
+    overflow: hidden;
+    background-color: #f7f8f9;
+    background-size: cover;
+}
+
+#header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#header h1 {
+    font-size: 70px;
+    letter-spacing: 0.4rem;
+    margin: 0;
+}
+
+#header h1 span {
+    background-color: #f7f8f9;
+    border-radius: 10px;
+    border: 10px solid #0275d8;
+    padding: 6px 14px;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    -webkit-box-shadow: -1px 4px 20px 11px rgba(49,49,49,0.57);
+-moz-box-shadow: -1px 4px 20px 11px rgba(49,49,49,0.57);
+box-shadow: -1px 4px 20px 11px rgba(49,49,49,0.57);
+}
 
 .bg-log-in {
     background-color: #f7f8f9;
