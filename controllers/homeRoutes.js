@@ -57,5 +57,10 @@ router.get('/signup', (req, res) => {
   res.render('signup');
 });
 
+router.get('/account', (req, res) => {
+  
+
+  res.render('account');
+});
 
 module.exports = router;
