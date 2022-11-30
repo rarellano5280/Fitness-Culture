@@ -41,6 +41,23 @@ router.get('/profile', withAuth, async (req, res) => {
   }
 });
 
+router.get('/account', withAuth, async (req, res) => {
+  try {
+    // Find the logged in user based on the session ID
+    const userData = await User.findByPk(req.session.user_id, {
+    });
+
+    const user = userData.get({ plain: true });
+
+    res.render('account', {
+      ...user,
+      logged_in: true,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
@@ -52,27 +69,20 @@ router.get('/login', (req, res) => {
 });
 
 router.get('/signup', (req, res) => {
-  
+
 
   res.render('signup');
 });
 
-router.get('/max', withAuth, async (req, res) => {
-  try {
-    // Find the logged in user based on the session ID
-    const userData = await User.findByPk(req.session.user_id, {
-    });
+router.get('/account', (req, res) => {
 
-    const user = userData.get({ plain: true });
 
-    res.render('max', {
-      ...user,
-      logged_in: true,
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-
+  res.render('account');
 });
 
+router.get('/max', (req, res) => {
+
+
+  res.render('max');
+});
 module.exports = router;
