@@ -85,4 +85,16 @@ router.get('/max', (req, res) => {
 
   res.render('max');
 });
+
+router.get('/program', (req, res) => {
+
+
+  res.render('program');
+});
+
+router.get('/measurements', (req, res) => {
+
+
+  res.render('measurements');
+});
 module.exports = router;
