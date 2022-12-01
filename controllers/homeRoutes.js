@@ -69,15 +69,32 @@ router.get('/login', (req, res) => {
 });
 
 router.get('/signup', (req, res) => {
-  
+
 
   res.render('signup');
 });
 
 router.get('/account', (req, res) => {
-  
+
 
   res.render('account');
 });
 
+router.get('/max', (req, res) => {
+
+
+  res.render('max');
+});
+
+router.get('/program', (req, res) => {
+
+
+  res.render('program');
+});
+
+router.get('/measurements', (req, res) => {
+
+
+  res.render('measurements');
+});
 module.exports = router;
