@@ -2,21 +2,28 @@
   {
     "name": "Robert Arellano",
     "email": "Rob@hotmail.com",
-    "password": "password1"
+    "password": "password1",
+    "weight": "150lbs",
+    "height": "6' 0"
   },
   {
     "name": "Jacob Van Dyke",
     "email": "Jacob@gmail.com",
-    "password": "password2"
+    "password": "password2",
+    "weight": "150lbs"
   },
   {
     "name": "Haileab",
     "email": "Haileab@aol.com",
-    "password": "password3"
+    "password": "password3",
+    "weight": "150lbs",
+    "height": "6' 0"
   },
   {
     "name": "Bryce",
     "email": "Bryce@yahoo.com",
-    "password": "password4"
+    "password": "password4",
+    "weight": "150lbs",
+    "height": "6' 0"
   }
 ]
