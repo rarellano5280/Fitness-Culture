@@ -80,6 +80,12 @@ router.get('/account', (req, res) => {
   res.render('account');
 });
 
+router.get('/nutrition', (req, res) => {
+
+
+  res.render('nutrition');
+});
+
 router.get('/max', (req, res) => {
 
 
