@@ -109,4 +109,9 @@ router.get('/measurements', (req, res) => {
 
   res.render('measurements');
 });
+
+router.get('/logout', (req, res) => {
+  res.render('login');
+});
+
 module.exports = router;
