@@ -12,6 +12,13 @@ router.get('/', (req, res) => {
   res.render('login');
 });
 
+router.get('/logout', (req, res) => {
+
+
+  res.render('login');
+});
+
+
 router.get('/homepage', async (req, res) => {
   try {
     res.render('homepage', {
