@@ -11,11 +11,11 @@
 6. [Contributors](#contributors)
     
   ## Description
- 
+    Our goal was to create a user friendly fitness app that allows users to log and store data that may be important to their fitness goals. This app will have the capability to store nutritional data, fitness programs, measurements, meal-prep data and max lifts. This app will allow users to create an account and login so that they can view and update personal information 
 
   ## Installation
 
-
+    
   ## Usage
 
 
